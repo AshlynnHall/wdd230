@@ -1,0 +1,39 @@
+header {
+    text-shadow: 0 0 30px #444;
+    font-size: 2.5rem;
+    height: 200px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+header img {
+    box-shadow: 0 0 30px #444;
+    float: left;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+body {
+    font-size: 16pt;
+    color: black;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    list-style-position: inside; 
+} 
+
+.me {
+    width: 200px;
+}
+header, footer{
+    border-radius: 10px;
+    background-color: hotpink;
+    box-shadow: 0 0 30px #444;
+    width: 700px;
+    align-content: center;
+}
+
+#modification {
+    color: yellow;
+}
