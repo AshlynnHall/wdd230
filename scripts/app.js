@@ -4,5 +4,5 @@ const modification = document.querySelector('#modification')
 
 h1.textContent = `Ashlynn Jean Hall`;
 
-copyright.textContent = `©️ ${new Date().getFullYear()}`;
+copyright.textContent = `${new Date().getFullYear()}`;
 modification.textContent = `Last Updated: ${(document.lastModified)}`;

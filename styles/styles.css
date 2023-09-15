@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Albert+Sans:wght@100;300&family=Kalam&display=swap');
+
+main {
+    text-align: center;
+}
+
+.me {
+    width: 200px;
+}
+
+body {
+    display: grid;
+    font-size: 16pt;
+    color: black;
+    font-family: 'Aboreto', 'Kalam', Georgia, Times, 'Times New Roman', serif;
+    grid-template: 1fr 1fr 1fr 1fr;
+} 
+.card {
+    margin: auto;
+    width: 50%;
+    border: 3px solid hotpink;
+    padding: 10px;
+}
+
+header, footer{
+    border-radius: 10px;
+    background-color: hotpink;
+    width: 700px;
+    align-content: center;
+}
+
+ul {
+    list-style-type: none; 
+}
+
 header {
     text-shadow: 0 0 30px #444;
     font-size: 2.5rem;
@@ -14,24 +49,6 @@ header img {
     float: left;
     border-radius: 10px;
     margin: 10px;
-}
-
-body {
-    font-size: 16pt;
-    color: black;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    list-style-position: inside; 
-} 
-
-.me {
-    width: 200px;
-}
-header, footer{
-    border-radius: 10px;
-    background-color: hotpink;
-    box-shadow: 0 0 30px #444;
-    width: 700px;
-    align-content: center;
 }
 
 #modification {
