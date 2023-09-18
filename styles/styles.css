@@ -27,7 +27,7 @@ nav a {
 }
 
 .card-headers {
-    background-color: hotpink;
+    background-color: lightpink;
     margin: 0;
     padding: 10px;
 }
@@ -41,7 +41,7 @@ body {
 .card {
     margin: 10px;
     text-align: center;
-    border: 3px solid hotpink;
+    border: 3px solid lightpink;
     margin: 10px;
     border-radius: 10px;
 }
@@ -59,7 +59,7 @@ ul {
 }
 
 header, footer {
-    background-color: hotpink;
+    background-color: lightpink;
     width: 700px;
     margin: 0 auto;
 }
@@ -76,7 +76,7 @@ footer {
 }
 
 h1 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -88,5 +88,5 @@ header img {
 }
 
 #modification {
-    color: yellow;
+    color: black;
 }
