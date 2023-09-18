@@ -37,7 +37,6 @@ body {
     font-size: 16pt;
     color: black;
     font-family: 'Aboreto', 'Kalam', Georgia, Times, 'Times New Roman', serif;
-    grid-template: 1fr 1fr 1fr 1fr;
 } 
 .card {
     margin: 10px;
