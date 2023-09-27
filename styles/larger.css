@@ -1,11 +1,17 @@
 @media (min-width: 500px) {
-	nav ul {
+	nav {
+        flex-direction: row;
+    }
+    nav ul {
 		display: flex;
 	}
 	nav ul li {
 		flex: 1 1 100%;
 	}
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    }
+    h2, hr {
+        grid-column: 1/3;
     }
 }

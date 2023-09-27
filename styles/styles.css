@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Albert+Sans:wght@100;300&family=Kalam&display=swap');
 
 main {
+    display: grid;
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
 }
 
 nav {
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
     flex-direction: column;
     text-align: center;
     gap: 20px;
     background-color: #444;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+}
+
+nav ul {
+    display: block;
+    width: 100%;
 }
 
 .me {
@@ -60,7 +66,7 @@ ul {
 
 header, footer {
     background-color: lightpink;
-    width: 700px;
+    width: 900px;
     margin: 0 auto;
 }
 
