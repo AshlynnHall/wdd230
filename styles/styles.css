@@ -33,7 +33,7 @@ nav ul {
 }
 
 .card-headers {
-    background-color: lightpink;
+    background-color: hotpink;
     margin: 0;
     padding: 10px;
 }
@@ -47,7 +47,7 @@ body {
 .card {
     margin: 10px;
     text-align: center;
-    border: 3px solid lightpink;
+    border: 3px solid hotpink;
     margin: 10px;
     border-radius: 10px;
 }
@@ -65,7 +65,7 @@ ul {
 }
 
 header, footer {
-    background-color: lightpink;
+    background-color: hotpink;
     width: 900px;
     margin: 0 auto;
 }
@@ -85,6 +85,14 @@ h1 {
     color: black;
     text-align: center;
 }
+
+h1::before {
+    content: '💗';
+  }
+
+h1::after {
+    content: '💗';
+  }
 
 header img {
     box-shadow: 0 0 30px #444;
