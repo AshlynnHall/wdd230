@@ -3,30 +3,93 @@
 main {
     display: grid;
     margin: 0 auto;
-    width: 900px;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
 }
 
-nav {
+/* nav {
     margin: 0 auto;
-    width: 900px;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 20px;
     background-color: #444;
     justify-content: center;
-}
+    width: 100%;
+} */
 
-nav a {
+/* nav a {
     text-decoration: none;
     color: white;
-    padding: 10px;
-}
+} */
+
+/* nav ul {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    background-color: #444;
+    justify-content: center;
+    padding: 0px;
+} */
+
+/* This is Brother Brigg's code BELOW and my old stuff ABOVE */
 
 nav ul {
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li{
+    list-style-type: none;
     display: block;
     width: 100%;
 }
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: #444;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: lightpink;    
+}
+
+.active{
+    background-color: lightpink;    
+}
+
+/* HAMBURGER MENU */
+
+
+.menu-hide, .menu-show{
+    display: none;
+    background-color: hotpink;
+    border: 1px solid #444;
+    margin: .5rem 0 0 .5rem;
+}
+
+.menu-hide.showing, .menu-show.showing{
+    display: block;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu.showing {
+    display: flex;
+}
+
+/* END HAMBURGER MENU */
 
 .me {
     width: 200px;
@@ -50,10 +113,12 @@ body {
     border: 3px solid hotpink;
     margin: 10px;
     border-radius: 10px;
+    grid-column: 1/3;
 }
 
 h2 {
     text-align: center;
+    grid-column: 1/3;
 }
 
 ul {
@@ -64,9 +129,14 @@ ul {
     text-align: left;
 }
 
+iframe {
+    grid-column: 1/3;
+    width: 100%;
+    justify-content: center;
+}
+
 header, footer {
     background-color: hotpink;
-    width: 900px;
     margin: 0 auto;
 }
 
@@ -77,18 +147,16 @@ header {
 }
 
 footer {
+    margin-top: 10px;
     text-align: center;
     border-radius: 10px;
+    width: 100%;
 }
 
 h1 {
     color: black;
     text-align: center;
 }
-
-h1::before {
-    content: '💗';
-  }
 
 h1::after {
     content: '💗';

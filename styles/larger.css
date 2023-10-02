@@ -1,15 +1,28 @@
-@media (min-width: 500px) {
-	nav {
-        flex-direction: row;
+@media (min-width: 900px) {
+	header, footer {
+        width: 900px;
     }
-    nav ul {
-		display: flex;
-	}
-	nav ul li {
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+    }
+    nav ul li {
 		flex: 1 1 100%;
 	}
+    .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
+        display: none;
+    }    
+    .activities {
+        grid-column: 1/2;
+    }
+    .information {
+        grid-column: 2/3;
+    }
+	
     main {
         grid-template-columns: 2fr 1fr;
+        width: 900px;
     }
     h2, hr {
         grid-column: 1/3;
