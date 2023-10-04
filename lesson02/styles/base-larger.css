@@ -1,9 +1,12 @@
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
 	main {
         grid-template-rows: 1fr;
     }
 
     section {
         grid-row: 1/2;
+    }
+    .card-3 {
+        grid-column: 3/4;
     }
 }

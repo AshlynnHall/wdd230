@@ -31,10 +31,10 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 20px;
     background-color: #444;
     justify-content: center;
     width: 900px;
+    height: 60px    ;
 }
 
 /* This is Brother Brigg's code BELOW and my old stuff ABOVE */
