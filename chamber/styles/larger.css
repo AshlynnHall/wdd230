@@ -1,0 +1,12 @@
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+}
+nav ul li {
+    flex: 1 1 100%;
+}
+
+.menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
+    display: none;
+}   

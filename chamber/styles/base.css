@@ -1,0 +1,63 @@
+body {
+    font-family: 'Garamond', 'Alegreya SC', 'sans-serif';
+    font-size: 22px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+  
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #1d201f;
+    color: #fff;
+}
+
+nav {
+    background-color: #1d201f;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #AEC3B0; /* change colors */
+    color: #598392; /* change colors */
+}
+
+/* HAMBURGER MENU */
+
+
+.menu-hide, .menu-show{
+    display: none;
+    background-color: lightpink;
+    border: 1px solid #444;
+    margin: .5rem 0 0 .5rem;
+}
+
+.menu-hide.showing, .menu-show.showing{
+    display: block;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu.showing {
+    display: flex;
+}
+
+/* END HAMBURGER MENU */
+
+footer {
+    background-color: #1d201f;
+    color: #fff;
+}
+  
+.hero-img {
+    border: 1px solid #c3dfe0;
+}
+  
+.button {
+    background-color: #ffe74c;
+    color: #1d201f;
+}
+  

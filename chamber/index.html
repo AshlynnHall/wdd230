@@ -2,10 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Yuba City Chamber of Commerce">
+    <meta name="author" content="Ashlynn Hall">
+    <meta property="og:title" content="Yuba City Chamber of Commerce Homepage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ashlynnhall.github.io/wdd230/chamber" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/7c/Downtown_Yuba_City.jpg" />
+    <title>Yuba City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
 </head>
 <body>
-    
+    <header>
+
+    </header>
+    <nav>
+        <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteplan.html">Page 2</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/sutter-buttes.jpg" alt="Sutter Buttes Mountain Range">
+            </div>
+        </div>
+        <section id="hero-msg">
+            <div class='button-box'>
+                <a class='join' href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+        <main class="home-grid">
+            <section class="current-events">
+                <h2>Current Events</h2>
+                <p>June 1 - picnic</p>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <p>Sunny and 75</p>
+            </section>
+            <section class="ads">
+                <h2>Community Ads</h2>
+                <p>Pigs in a blanket <br>ONLY $1.99</p>
+            </section>
+        </main>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span></p>
+        <p>Ashlynn Jean Hall</p>
+        <p>WDD230 Final Project</p>
+        <p><span id=modification></span></p>
+    </footer>
 </body>
 </html>
