@@ -1,26 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Gabarito&display=swap');
+
 body {
     font-family: 'Garamond', 'Alegreya SC', 'sans-serif';
     font-size: 22px;
-    background-color: #fff;
-    margin: 0;
+    background-color: #c3dfe0;
     padding: 0;
+    max-width: 1024px;
+    margin: 0 auto;
 }
   
 header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    background-color: #1d201f;
+    display: flex;
+    background-color: #477998;
     color: #fff;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
 }
 
 nav {
     background-color: #1d201f;
     color: #fff;
+    display: flex;
+    justify-content: space-around;
 }
 
-nav a:hover {
-    background-color: #AEC3B0; /* change colors */
-    color: #598392; /* change colors */
+#nav-menu {
+    display: flex;
+}
+
+#nav-menu li {
+    list-style: none;
+}
+
+#nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#nav-menu li a:hover {
+    background-color: #c3dfe0; 
+    color: #477998;
 }
 
 /* HAMBURGER MENU */
@@ -28,8 +51,9 @@ nav a:hover {
 
 .menu-hide, .menu-show{
     display: none;
-    background-color: lightpink;
-    border: 1px solid #444;
+    color: white;
+    background-color: #1d201f;
+    border: 1px solid #1d201f;
     margin: .5rem 0 0 .5rem;
 }
 
@@ -41,23 +65,95 @@ nav a:hover {
     display: none;
 }
 
+#nav-menu a {
+    padding: 10px;
+}
+
 #nav-menu.showing {
     display: flex;
+    
 }
 
 /* END HAMBURGER MENU */
 
+#hero {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#hero button {
+    background-color: #c3dfe0;
+    color: #1d201f;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+#hero button:hover {
+    background-color: #ffe74c;
+}
+
+
+.current-events{
+    border-top: 2px solid var(--nav-color);
+    border-bottom: 2px solid var(--nav-color);
+    margin: 0px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.event-card{
+    border: 2px solid var(--nav-color);
+    background-color: var(--card-color);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.weather{
+    border-top: 2px solid var(--nav-color);
+    border-bottom: 2px solid var(--nav-color);
+    margin: 0px;
+    padding: 1rem;
+    text-align: center;   
+}
+
+.weather-card{
+    border: 2px solid var(--nav-color);
+    background-color: var(--card-color);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.ads{
+    border: 2px solid var(--nav-color);
+    background-color: var(--card-color);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    min-width: 250px;
+}
+
+.ads-card {
+    border: 2px solid var(--nav-color);
+    background-color: var(--card-color);
+    padding: 1rem;
+    margin: 1rem;
+}
+
 footer {
     background-color: #1d201f;
     color: #fff;
+    text-align: center;
 }
   
-.hero-img {
-    border: 1px solid #c3dfe0;
-}
-  
-.button {
-    background-color: #ffe74c;
-    color: #1d201f;
-}
   

@@ -7,7 +7,7 @@
     <meta name="description" content="Yuba City Chamber of Commerce">
     <meta name="author" content="Ashlynn Hall">
     <meta property="og:title" content="Yuba City Chamber of Commerce Homepage" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://ashlynnhall.github.io/wdd230/chamber" />
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/7c/Downtown_Yuba_City.jpg" />
     <title>Yuba City Chamber of Commerce</title>
@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-
+        <h1>Chamber of Commerce</h1>
     </header>
     <nav>
         <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
@@ -35,26 +35,41 @@
             <div id="hero-box">
                 <img id="hero-img" src="images/sutter-buttes.jpg" alt="Sutter Buttes Mountain Range">
             </div>
+            <button>Join the Chamber</button>
         </div>
-        <section id="hero-msg">
-            <div class='button-box'>
-                <a class='join' href="join.html">Join the Chamber</a>
-            </div>
-        </section>
-        <main class="home-grid">
+        <section class="home-grid">
             <section class="current-events">
                 <h2>Current Events</h2>
-                <p>June 1 - picnic</p>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <h3>Community Picnic</h3>
+                        <p>We are having a community Picnic June 1st at 2 PM! Join us at Main St Park.</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>LDS Temple Open House</h3>
+                        <p>The LDS Temple would like to invite you to come tour their new temple. This two-week event 
+                            is unique and will only be for this short period of time. Afterwards it will closed to the 
+                            public.
+                        </p>
+                    </div>
+                </div>
             </section>
             <section class="weather">
                 <h2>Weather</h2>
-                <p>Sunny and 75</p>
+                <div class="weather-card">
+                    <p>Current Conditions: Sunny</p>
+                    <p>Current Temp: 65&deg;F</p>
+                    <p>Current Wind: 5 MPH</p>
+                    <p>Windchill: </p>
+                </div>
             </section>
             <section class="ads">
                 <h2>Community Ads</h2>
-                <p>Pigs in a blanket <br>ONLY $1.99</p>
+                <div class="ads-card">
+                    <p>Pigs in a blanket <br>ONLY $1.99</p>
+                </div>
             </section>
-        </main>
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="copyright"></span></p>

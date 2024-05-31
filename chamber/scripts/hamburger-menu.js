@@ -1,15 +1,15 @@
-const hidebutton = document.querySelector(".menu-hide");
-const showbutton = document.querySelector(".menu-show");
-const navmenu = document.querySelector("#nav-menu"); 
+const menuHideButton = document.querySelector('.menu-hide');
+const menuShowButton = document.querySelector('.menu-show');
+const navMenu = document.getElementById('nav-menu');
 
-hidebutton.addEventListener('click',() => {
-    hidebutton.classList.toggle('showing');
-    showbutton.classList.toggle('showing');
-    navmenu.classList.toggle('showing');
+menuShowButton.addEventListener('click', () => {
+    navMenu.classList.add('showing');
+    menuShowButton.classList.remove('showing');
+    menuHideButton.classList.add('showing');
 });
 
-showbutton.addEventListener('click',() => {
-    hidebutton.classList.toggle('showing');
-    showbutton.classList.toggle('showing');
-    navmenu.classList.toggle('showing');        
+menuHideButton.addEventListener('click', () => {
+    navMenu.classList.remove('showing');
+    menuShowButton.classList.add('showing');
+    menuHideButton.classList.remove('showing');
 });
