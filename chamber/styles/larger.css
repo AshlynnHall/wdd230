@@ -35,7 +35,6 @@
     .weather{
         grid-column: 3/4;        
         align-content: center;
-        border-left: 2px black solid;
     }
 
     .ads {
