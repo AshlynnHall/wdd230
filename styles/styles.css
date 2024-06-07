@@ -110,6 +110,40 @@ body {
     color: black;
     font-family: 'Aboreto', 'Kalam', Georgia, Times, 'Times New Roman', serif;
 } 
+
+.hero {
+    text-align: center;
+    position: relative;
+    grid-column: 1/3;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.hero img {
+    border: 2px black solid;
+    max-width: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    border: 1px black solid;
+    border-radius: 4px;
+}
+
+/* .herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+} */
+
 .card {
     margin: 10px;
     text-align: center;
