@@ -2,15 +2,15 @@ const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 
 modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("🕶️")) {
-		main.style.background = "#1d201f";
-		main.style.color = "#fff";
-		modeButton.textContent = "🔆";
-	} else {
-		main.style.background = "#c3dfe0";
-		main.style.color = "#000";
-		modeButton.textContent = "🕶️";
-	}
+    if (main.classList.contains("light-mode")) {
+        main.classList.remove("light-mode");
+        main.classList.add("dark-mode");
+        modeButton.textContent = "🔆";
+    } else {
+        main.classList.remove("dark-mode");
+        main.classList.add("light-mode");
+        modeButton.textContent = "🕶️";
+    }
 });
 
 

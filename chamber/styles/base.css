@@ -9,16 +9,51 @@ body {
     margin: 0 auto;
     color: #1d201f;
 }
+/* LIGHT MODE */
+
+.light-mode {
+    background: #c3dfe0;
+    color: #1d201f;
+    border-color: #1d201f;
+}
+
+/* END LIGHT MODE */
+
+/* DARK MODE */
+
+.dark-mode {
+    background: #1d201f;
+    color: #fff;
+    border-color: #c3dfe0;
+}
+
+main.light-mode *, main.dark-mode * {
+    border-color: inherit;
+}
+
+/* END DARK MODE */
   
 header {
     display: flex;
     background-color: #477998;
     color: #fff;
+    align-items: center;
+    position: relative;
 }
 
 header h1 {
     width: 100%;
     text-align: center;
+}
+
+header img{
+    height: 150px;
+}
+
+header div {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 nav {
@@ -142,8 +177,6 @@ nav {
 }
 
 .ads-card {
-    border: 2px solid var(--nav-color);
-    background-color: var(--card-color);
     padding: 1rem;
     margin: 1rem;
 }

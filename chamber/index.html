@@ -18,9 +18,11 @@
     <script src="scripts/app.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/dark-mode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 <body>
     <header>
+        <img src="images/logo-medium.webp">
         <h1>Yuba City Chamber of Commerce</h1>
         <div id="mode">
             🕶️
@@ -37,7 +39,9 @@
     <main>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/sutter-buttes.jpg" alt="Sutter Buttes Mountain Range">
+                <source media="(max-width: 800px)" srcset="images/sutter-buttes-small.webp">                    
+                <source media="(max-width: 1024px)" srcset="images/sutter-buttes-medium.webp"> 
+                <img id="hero-img" src="images/sutter-buttes-large.webp" alt="Sutter Buttes Mountain Range">
             </div>
             <button>Join the Chamber</button>
         </div>
@@ -61,10 +65,10 @@
             <section class="weather">
                 <h2>Weather</h2>
                 <div class="weather-card">
-                    <p>Current Conditions: Sunny</p>
-                    <p>Current Temp: 65&deg;F</p>
-                    <p>Current Wind: 5 MPH</p>
-                    <p>Windchill: </p>
+                    <p>Current Conditions: <span id="current-conditions">Partly Cloudy</span></p>
+                    <p>Current Temp: <span id="temperature">49</span>&deg;F</p>
+                    <p>Current Wind: <span id="windspeed">8</span> MPH</p>
+                    <p>Windchill: <span id="windchill"></span></p>
                 </div>
             </section>
             <section class="ads">

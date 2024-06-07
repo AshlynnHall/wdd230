@@ -1,0 +1,36 @@
+@media screen and (min-width: 800px){
+    .event-cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .ads {
+        display: flex;    
+    }
+
+    .ad {
+        width: 100%; 
+        min-width: 150px;       
+    }
+
+    #navbar {     
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navbar.open {     
+        display: flex;
+        flex-direction: row;
+    }
+    #menubutton {
+        display: none;
+    }
+    
+    .hero p::before {
+        content: "medium";
+    }
+}
