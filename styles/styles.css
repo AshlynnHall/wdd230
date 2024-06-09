@@ -7,24 +7,6 @@ main {
     width: 100%;
 }
 
-/* nav a {
-    text-decoration: none;
-    color: white;
-} */
-
-/* nav ul {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    background-color: #444;
-    justify-content: center;
-    padding: 0px;
-} */
-
-/* When I comment this out it looks different, why? Brother Brigg's code doesn't have any of this and
-I think some of it is repetitive. It also kinda breaks the hamburger menu*/
 
 nav {
     margin: 0 auto;
@@ -190,7 +172,7 @@ h1 {
 
 h1::after {
     content: '🖤';
-  }
+}
 
 header img {
     box-shadow: 0 0 30px #444;
@@ -202,3 +184,4 @@ header img {
 #modification {
     color: black;
 }
+

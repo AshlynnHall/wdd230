@@ -187,4 +187,24 @@ footer {
     text-align: center;
 }
   
-  
+/* discover page */
+
+#discover-main{
+    display: block;
+}
+
+#discover-images{
+    text-align: center;
+}
+
+#discover-images img:hover {
+    opacity: .8;
+    transform: scale(1.01);
+}
+
+#welcome, #demographics, #special {
+    border-radius: 20px;
+    border: 1px solid #1d201f;    
+    padding: 1rem;
+    margin: 1rem 0;
+}

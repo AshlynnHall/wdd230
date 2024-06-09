@@ -46,4 +46,17 @@
     .ad-card {
         width: auto;
     }
+
+    #side-elements {
+        padding: 1rem;
+    }
+
+    #discover-main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    #discover-images {
+        padding-top: 10px;
+    }
 }
