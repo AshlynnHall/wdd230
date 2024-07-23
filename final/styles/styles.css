@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Albert+Sans:wght@100;300&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 100px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+    list-style-type: none;
+}
+nav a {
+    text-align: center;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    padding: 45px;
+}
+
+/* HAMBURGER MENU */
+
+.menu-hide, .menu-show {
+    display: none;
+    background-color: #9A8873;
+    border: 1px solid #472C1b;
+    margin: .5rem 0 0 .5rem;
+}
+
+.menu-hide.showing, .menu-show.showing {
+    display: block;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu.showing {
+    display: flex;
+}
+
+/* END HAMBURGER MENU */
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #171614;
+}
+nav a:hover {
+    background-color: #9A8873;
+    color: #472C1b;
+}
+div.hero {
+    width: 100%;
+}
+.hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.hero img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-family: "Aboreto";
+    text-align: center;
+    padding: 25px;
+}
+p {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 45px;
+    color: #472C1b;
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: #598392;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+body {
+    font-family: "Albert Sans", Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: auto;
+    padding-bottom: 80px;
+}
+
+.jumping, .crosscountry, .dressage {
+    margin: 200px 30px;
+}
+
+
+.card-img {
+    width: 85%;
+}
+
+.pre-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: auto;
+    background-color: #9A8873;
+    padding: 40px;
+}
+iframe {
+    text-align: center;
+}
+
+footer {
+    background-color: #171614;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}

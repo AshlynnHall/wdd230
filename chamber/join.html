@@ -2,10 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Yuba City Chamber of Commerce Join Page">
+    <meta name="author" content="Ashlynn Hall">
+    <meta property="og:title" content="Yuba City Chamber of Commerce Join Page" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ashlynnhall.github.io/wdd230/chamber" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/7c/Downtown_Yuba_City.jpg" />
+    <title>Yuba City Chamber of Commerce Join Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo-medium.webp">
+        <h1>Yuba City Chamber of Commerce</h1>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+    <nav>
+        <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="join-main">
+        <section class="join">
+            <div>
+                <form method="get" action="record.html">
+                    <label>First Name* 
+                        <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name*
+                        <input type="text" id="lname" name="lname" required pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label>Title or position 
+                        <input type="text" id="position" name="position" required></label>
+                    <label>Email* 
+                        <input type="email" name="email" required placeholder="example@mymail.com"></label>
+                    <label class="myinput">Cell Phone*                    
+                        <input type="tel" name="cellphone" required></label>
+                    <label class="myinput">Business Name*
+                        <input type="text" name="bizname" required></label>
+                    <h3>Membership Level</h3>
+                        <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                        <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                        <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                        <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                        <label class="myinput">Business Description<textarea name="description" cols="45" rows="4"></textarea></label>
+                        <input id="join-time" type="hidden" name="join-time" value="">
+                        <button class="mysubmit">Join the Chamber!</button>
+                    <button type="submit">Give Us Your Feedback!</button>
+                </form>
+            </div>
+            <div>
+                <h2>Membership Levels Benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non profit organizations and there is no fee</li>
+                </ul>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>15% discount on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50/month</li>
+                </ul>
+
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $250/month</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span></p>
+        <p>Ashlynn Jean Hall</p>
+        <p>WDD230 Final Project</p>
+        <p><span id=modification></span></p>
+    </footer>
 </body>
 </html>

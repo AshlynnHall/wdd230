@@ -1,0 +1,20 @@
+@media (min-width: 750px) {
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .menu-hide.showing, .menu-show.showing {
+        display: none;
+    }
+
+    .hero {
+        grid-column: 1/4;
+        align-items: center;
+    }
+}
