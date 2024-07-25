@@ -1,5 +1,9 @@
 @media (min-width: 750px) {
 
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     #nav-menu {
         display: flex;
         flex-direction: row;
@@ -16,5 +20,21 @@
     .hero {
         grid-column: 1/4;
         align-items: center;
+    }
+
+    #rental-options {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .rental-card {
+        flex: 1 1 30%;
+        margin: 0 10px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-grid label {
+        justify-content: flex-start;
     }
 }

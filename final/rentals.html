@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Scooter Rentals - Rentals</title> 
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/rentals.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SCOOTS!</h1>
+        <nav>
+            <button class="menu-hide">X</button>
+            <button class="menu-show showing">&equiv;</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="rental-options">
+            <h2>Our Rental Options</h2>
+            <div class="rental-card">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./images/red-moped-smaller.webp" />
+                    <img src="images/red-moped-larger.webp" alt="Red moped" />
+                </picture>
+                <h3>Scooters Options:</h3>
+                <p>Honda Metro Scooter</p>
+                <p>Honda Dio Scooter</p>
+                <p>Honda PCX150 Scooter</p>
+            </div>
+            <div class="rental-card">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./images/atv-smaller.webp" />
+                    <img src="images/atv-larger.webp" alt="ATV" />
+                </picture>
+                <h3>ATV Options</h3>
+                <p>Honda Pioneer ATV</p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="rental-card">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./images/jeep-smaller.webp" />
+                    <img src="images/jeep-larger.webp" alt="Jeep on sand" />
+                </picture>
+                <h3>Jeep Options</h3>
+                <p>Jeep Wrangler - 4 door with a/c</p>
+                <p>Jeep Wrangler - 2 door</p>
+                <p></p>
+                <p></p>
+            </div>
+        </section>
+        <h2>Rental Options and Pricing</h2>
+        <table id="rental-table">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Reservation<br>Half Day (3 hrs)</th>
+                    <th>Reservation<br>Full Day</th>
+                    <th>Walk-In<br>Half Day (3 hrs)</th>
+                    <th>Walk-In<br>Full Day</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span></p>
+        <p>Scoots Scooter Rentals</p>
+        <p><span id="modification"></span></p>
+        <a href="attributions.html">Attributions</a>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Spring Hill Stables Website">
+    <meta name="description" content="Scoots Rental Shop - Cozumel">
     <meta name="author" content="Ashlynn Hall">
-    <meta property="og:title" content="Spring Hill Stables Homepage" />
+    <meta property="og:title" content="Scoots Rental Shop Homepage" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ashlynnhall.github.io/wdd230/final" />
-    <meta property="og:image" content="https://i0.wp.com/stablestyle.net/wp-content/uploads/2021/09/Rubber-pavers-in-the-barn.jpg?fit=960%2C720&ssl=1" />
-    <title>Spring Hill Stables</title>
+    <meta property="og:image" content="https://experience.transat.com/wp-content/uploads/2023/06/2023-quoi-faire-a-Cozumel-Cozumel-travel-guide-2023.jpg" />
+    <title>Scoots Scooter Rentals - Home</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -19,65 +19,87 @@
     <script src="scripts/visit.js" defer></script>
 </head>
 <body>
+    <div id="weather-alert">
+        High Temperature Today: <span id="alert-temp">50</span>°C<span id="alert-description">
+        <button onclick="document.getElementById('weather-alert').style.display='none'">Close</button>
+    </div>
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Spring Hill Stables">
-        </a>
+        <h1>Scoots!</h1>
         <nav>
             <button class="menu-hide">X</button>
             <button class="menu-show showing">&equiv;</button>
-            <ul id="nav-menu">
+            <ul id="nav-menu"> 
                 <li><a href="index.html">Home</a></li>
-                <li><a href="facility.html">Site Plan</a></li>
-                <li><a href="out-staff.html">Chamber</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
             <picture>                
-                <source media="(max-width: 800px)" srcset="./images/sideview-smaller.webp" />
-                <img src="images/sideview-smaller.webp" alt="Woman on horseback" />
-            </picture>            
+                <source media="(max-width: 800px)" srcset="./images/hero-smaller.webp" />
+                <img src="images/hero-larger.webp" alt="Woman on horseback" />
+            </picture>
+            <button class="hero-btn">Reserve Now</button>          
         </div>
-        <h1>Welcome to Spring Hill Equestrian</h1>
-        <p>Our facility is located conveniently 5 miles east of Rexburg, ID and 36 miles north from the GHHJA Headquarters in Idaho Falls, ID. We have provided professional training in Show Jumping, Dressage, and Cross Country for over 15 years and are dedicated to bringing out the best rider in everyone. Alongside our professional training, we provide a safe and enjoyable atmosphere for riders and horses in our newly renovated arenas and stables.</p>
-        <section class="home-grid">
-            <section class="jumping">
-                <picture class="card-img">                
-                    <source media="(max-width: 800px)" srcset="./images/whitehorsejumping-smaller.webp" />
-                    <img src="images/whitehorsejumping-smaller.webp" alt="White horse show jumping" />
+        <section id="rental-options">
+            <h2>Our Rental Options</h2>
+            <div class="rental-card">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./images/red-moped-smaller.webp" />
+                    <img src="images/red-moped-larger.webp" alt="Woman on horseback" />
                 </picture>
-                <h2>Show Jumping</h2>
-            </section>
-            <section class="dressage">
-                <picture class="card-img">                
-                    <source media="(max-width: 800px)" srcset="./images/horseshow-smaller.webp" />
-                    <img src="images/horseshow-smaller.webp" alt="Woman sitting on brown horse" />
+                <h3>Scooters</h3>
+                <p>Explore the island with our range of scooters.</p>
+            </div>
+            <div class="rental-card">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./images/atv-smaller.webp" />
+                    <img src="images/atv-larger.webp" alt="Woman on horseback" />
                 </picture>
-                <h2>Dressage</h2>
-            </section>
-            <section class="crosscountry">
-                <picture class="card-img">                
-                    <source media="(max-width: 800px)" srcset="./images/eventing-smaller.webp" />
-                    <img src="images/eventing-smaller.webp" alt="Horse jumping over outside jump" />
+                <h3>ATVs</h3>
+                <p>Adventure through Cozumel’s terrain with our ATVs.</p>
+            </div>
+            <div class="rental-card">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./images/jeep-smaller.webp" />
+                    <img src="images/jeep-larger.webp" alt="Woman on horseback" />
                 </picture>
-                <h2>Cross Country</h2>
-            </section>
+                <h3>Jeeps</h3>
+                <p>Experience the island’s sights with our rugged jeeps.</p>
+            </div>
         </section>
-        <section class="pre-footer">
-            <section class="card information">
-                <h3 class="card-headers">Information</h3>
-                <p>Rexburg, ID<br><br>Sunny 73&deg;F<br><br>Number of visits: <span id="visits"></span></p>
+        <div class="info-grid">
+            <section id="about">
+                <h2>About Scoots</h2>
+                <p>Scoots is a motor scooter rental company located on the island of Cozumel, Mexico. We want you to experience Cozumel in the best way and create lasting memories of your time with us.</p>
             </section>
-            <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30271.661416785224!2d-111.72335835326986!3d43.778004646931045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1668886241270!5m2!1sen!2sus" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+            <section id="weather-info">
+                <h2>Today's Weather</h2>
+                <div id="weather-data">
+                    <div id="weather-info">
+                        <div>Humidity: <span id="humidity"></span>%</div>
+                        <div>Temperature: <span id="temperature"></span>&deg;F</div>
+                    </div>
+                    <div id="weather-desc">
+                    </div>
+                </div>
+                <div>Tomorrows temperature @ 15:00: <span id="next-temp">96</span>&deg;F</div>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="copyright"></span></p>
-        <p>Spring Hill Stables</p>
+        <p>Scoots Scooter Rentals</p>
         <p><span id="modification"></span></p>
+        <a href="attributions.html">Attributions</a>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
     </footer>
 </body>
 </html>

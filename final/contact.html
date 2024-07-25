@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Scooter Rentals - Rentals</title> 
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/rentals.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SCOOTS!</h1>
+        <nav>
+            <button class="menu-hide">X</button>
+            <button class="menu-show showing">&equiv;</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> +52 345 789 3210</p>
+            <p><strong>Email:</strong> info@scoots.com</p>
+            <p><strong>Address:</strong> Dainia Dr, Cozumel, Quintana Roo, Mexico</p>
+        </section>
+        
+        <section id="map">
+            <h2>Our Locations</h2>
+            <div class="map-container">
+                <iframe id="google-map-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.5522227276!2d-86.87425345!3d20.43208355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1721865501613!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="google-map-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119466.10446240014!2d-87.16247348118982!3d20.656728675324327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4323d22d4e61%3A0xe8c10b783bab4adc!2sPlaya%20del%20Carmen%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1721865589999!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
+        <section id="contact-form">
+            <h2>Contact Us Form</h2>
+            <form action="/submit-contact" method="post">
+                <div class="form-grid">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span></p>
+        <p>Scoots Scooter Rentals</p>
+        <p><span id="modification"></span></p>
+        <a href="attributions.html">Attributions</a>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Scooter Rentals - Rentals</title> 
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/rentals.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SCOOTS!</h1>
+        <nav>
+            <button class="menu-hide">X</button>
+            <button class="menu-show showing">&equiv;</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Reservations</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid driver's license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+</section>
+
+        <section id="reservation-form">
+            <h2>Reservation Form</h2>
+            <form action="/submit-reservation" method="post">
+                <div class="form-grid">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="period">Rental Period:</label>
+                    <select id="period" name="period" required>
+                        <option value="1_day">1 Day</option>
+                        <option value="3_days">3 Days</option>
+                        <option value="1_week">1 Week</option>
+                    </select>
+
+                    <label for="rental-type">Rental Type:</label>
+                    <select id="rental-type" name="rental-type" required>
+                        <option value="scooter">Scooter</option>
+                        <option value="atv">ATV</option>
+                        <option value="jeep">Jeep</option>
+                    </select>
+
+                    <label for="number">Number of Rentals:</label>
+                    <input type="number" id="number" name="number" min="1" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="home-state">Home State/Country:</label>
+                    <input type="text" id="home-state" name="home-state" required>
+
+                    <label for="cruise-line">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise-line" name="cruise-line">
+
+                    <label for="accommodations">Special Accommodations/Comments:</label>
+                    <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+
+                    <button type="submit">Submit Reservation</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span></p>
+        <p>Scoots Scooter Rentals</p>
+        <p><span id="modification"></span></p>
+        <a href="attributions.html">Attributions</a>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
