@@ -357,30 +357,3 @@ tr:nth-child(even) {
     border: 0;
 }
 
-#contact-form {
-    background-color: #f0f8ff;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-#contact-form h2 {
-    color: #ff5733;
-    font-family: 'Aboreto', cursive;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-label {
-    display: block;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
