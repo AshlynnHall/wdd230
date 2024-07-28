@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let membersData = [];
 
     function fetchMembers() {
-        fetch('members.json')
+        fetch('data/members.json')
             .then(response => response.json())
             .then(data => {
                 membersData = data;
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const memberHTML = `
-                <img src="images/${member.image}" alt="${member.name}">
+
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>

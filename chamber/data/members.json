@@ -4,7 +4,6 @@
         "address": "123 Main St, Yuba City, CA 95991",
         "phone": "(530) 123-4567",
         "website": "http://www.greenleafco.com",
-        "image": "greenleaf.png",
         "membership_level": "Gold"
     },
     {
@@ -12,7 +11,6 @@
         "address": "456 Innovation Dr, Yuba City, CA 95991",
         "phone": "(530) 234-5678",
         "website": "http://www.techinnovators.com",
-        "image": "techinnovators.png",
         "membership_level": "Silver"
     },
     {
@@ -20,7 +18,6 @@
         "address": "789 Wellness Way, Yuba City, CA 95991",
         "phone": "(530) 345-6789",
         "website": "http://www.yubafitness.com",
-        "image": "yubafitness.png",
         "membership_level": "Bronze"
     },
     {
@@ -28,7 +25,6 @@
         "address": "101 Sweet St, Yuba City, CA 95991",
         "phone": "(530) 456-7890",
         "website": "http://www.sunshinebakery.com",
-        "image": "sunshinebakery.png",
         "membership_level": "NP"
     },
     {
@@ -36,7 +32,6 @@
         "address": "202 Design Ave, Yuba City, CA 95991",
         "phone": "(530) 567-8901",
         "website": "http://www.creativedesigns.com",
-        "image": "creativedesigns.png",
         "membership_level": "Gold"
     }
 ]
