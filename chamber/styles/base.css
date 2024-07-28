@@ -274,3 +274,15 @@ input:invalid{
     grid-template-columns: 1fr 1fr;
     text-align: center;
 }
+
+form label {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
