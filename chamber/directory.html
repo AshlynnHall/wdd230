@@ -19,6 +19,7 @@
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/dark-mode.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,9 +38,12 @@
             <li><a href="directory.html">Directory</a></li>
         </ul>
     </nav>
-    <main id="join-main">
-        <h3>Thank you for your interests in joining our chamber of commerce.</h3>
-
+    <main>
+        <div>
+            <button id="toggleView">Toggle View</button>
+        </div>
+        <div id="directory" class="grid-view">
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="copyright"></span></p>

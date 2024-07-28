@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Green Leaf Co.",
+        "address": "123 Main St, Yuba City, CA 95991",
+        "phone": "(530) 123-4567",
+        "website": "http://www.greenleafco.com",
+        "image": "greenleaf.png",
+        "membership_level": "Gold"
+    },
+    {
+        "name": "Tech Innovators",
+        "address": "456 Innovation Dr, Yuba City, CA 95991",
+        "phone": "(530) 234-5678",
+        "website": "http://www.techinnovators.com",
+        "image": "techinnovators.png",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Yuba Fitness Center",
+        "address": "789 Wellness Way, Yuba City, CA 95991",
+        "phone": "(530) 345-6789",
+        "website": "http://www.yubafitness.com",
+        "image": "yubafitness.png",
+        "membership_level": "Bronze"
+    },
+    {
+        "name": "Sunshine Bakery",
+        "address": "101 Sweet St, Yuba City, CA 95991",
+        "phone": "(530) 456-7890",
+        "website": "http://www.sunshinebakery.com",
+        "image": "sunshinebakery.png",
+        "membership_level": "NP"
+    },
+    {
+        "name": "Creative Designs",
+        "address": "202 Design Ave, Yuba City, CA 95991",
+        "phone": "(530) 567-8901",
+        "website": "http://www.creativedesigns.com",
+        "image": "creativedesigns.png",
+        "membership_level": "Gold"
+    }
+]
