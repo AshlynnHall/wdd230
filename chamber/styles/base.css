@@ -315,3 +315,27 @@ form input[type="email"] {
 .list-view .member-card {
     display: block;
 }
+
+/* BANNER */
+
+.banner {
+    background-color: #c3dfe0;
+    color: #1d201f;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

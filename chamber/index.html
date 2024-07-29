@@ -19,6 +19,8 @@
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/dark-mode.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,6 +30,10 @@
             🕶️
         </div>
     </header>
+    <div id="banner" class="banner hidden">
+        <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+        <button id="closeBanner" class="close-button">❌</button>
+    </div>
     <nav>
         <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
         <ul id="nav-menu">
@@ -66,11 +72,15 @@
             <section class="weather">
                 <h2>Weather</h2>
                 <div class="weather-card">
-                    <p>Current Conditions: <span id="current-conditions">Partly Cloudy</span></p>
-                    <p>Current Temp: <span id="temperature">49</span>&deg;F</p>
-                    <p>Current Wind: <span id="windspeed">8</span> MPH</p>
-                    <p>Windchill: <span id="windchill"></span></p>
+                    <p>Current Conditions: <span id="current-conditions">Loading...</span></p>
+                    <p>Current Temp: <span id="temperature">Loading...</span></p>
+                    <p>Current Wind: <span id="windspeed">Loading...</span> MPH</p>
+                    <p>Windchill: <span id="windchill">Loading...</span></p>
+                    <h3>3-Day Forecast</h3>
+                <div id="forecast">
                 </div>
+                </div>
+                
             </section>
             <section class="ads">
                 <h2>Community Ads</h2>
