@@ -12,7 +12,6 @@ async function weatherApiFetch(api, current = true) {
 
         if (response.ok) {
             let data = await response.json();
-            //console.table(data);
             if (current) {
                 displayResults(data);
             }
